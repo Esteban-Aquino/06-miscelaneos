@@ -1,0 +1,6 @@
+<button type="button" class="btn btn-primary" (click)="ejecutar()" [disabled]="cargando">
+    <i class ="fas" [ngClass]="{'fa-save':!cargando, 'fa-sync-alt fa-spin':cargando}" ></i> 
+    <span *ngIf="!cargando"> Guardar</span>
+    <span *ngIf="cargando"> Guardando..</span>
+</button>
+<label> Cargando: {{cargando}} </label>

@@ -1,0 +1,31 @@
+<select name="sel-alertas" class="form-control" style="margin-bottom:20px;" [(ngModel)]="alerta">
+    <option *ngFor="let a of alertas" [value]="a.value">{{a.name}}</option>
+</select>
+<div [ngSwitch]="alerta">
+    <div *ngSwitchCase="'primary'" class="alert alert-primary" role="alert">
+        A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div *ngSwitchCase="'secondary'" class="alert alert-secondary" role="alert">
+        A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div *ngSwitchCase="'success'" class="alert alert-success" role="alert">
+        A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div *ngSwitchCase="'info'" class="alert alert-info" role="alert">
+        A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div *ngSwitchCase="'warning'" class="alert alert-warning" role="alert">
+        A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div *ngSwitchCase="'light'" class="alert alert-light" role="alert">
+        A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div *ngSwitchCase="'dark'" class="alert alert-dark" role="alert">
+        A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div *ngSwitchDefault>
+        <div class="alert alert-danger" role="alert">
+            A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+    </div>
+</div>
