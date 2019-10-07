@@ -21,8 +21,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgStyleComponent implements OnInit {
 
-  tamanio:number = 30;
-  color:String = 'black';
+  tamanio = 30;
+  color = 'black';
   constructor() { }
 
 
